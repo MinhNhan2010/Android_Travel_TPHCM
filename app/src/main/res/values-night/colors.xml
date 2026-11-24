@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Saigon Terracotta / Peach Palette (Dark Mode) -->
+    <color name="saigon_red">#FFE64A19</color>
+    <color name="saigon_red_dark">#FFFFAB91</color>
+    <color name="saigon_red_light">#FF3B2019</color>
+    <color name="saigon_peach_pill">#FF4A251B</color>
+    <color name="saigon_peach_soft">#FF381E17</color>
+    <color name="bottom_bar_peach">#FF1A1F2C</color>
+    <color name="bottom_bar_border">#FF2D3548</color>
+
+    <!-- Secondary Saigon Teal & Mint (Dark Mode) -->
+    <color name="saigon_teal">#FF26A69A</color>
+    <color name="saigon_teal_chip">#FF00897B</color>
+    <color name="saigon_teal_dark">#FF80CBC4</color>
+    <color name="saigon_teal_light">#FF123532</color>
+    <color name="saigon_teal_mint">#FF163D39</color>
+
+    <!-- Gold & Indigo Accents -->
+    <color name="saigon_gold">#FFFFB300</color>
+    <color name="saigon_gold_light">#FFFFECB3</color>
+    <color name="saigon_indigo">#FF818CF8</color>
+    <color name="saigon_indigo_light">#FF1E223D</color>
+
+    <!-- Dark Surfaces & Elevated Slate-Lavender Containers -->
+    <color name="cream_background">#FF111520</color>
+    <color name="surface_white">#FF1C2232</color>
+    <color name="surface_subtle">#FF252C40</color>
+    <color name="surface_lavender">#FF252B3E</color>
+    <color name="chip_lavender">#FF30374F</color>
+    <color name="card_stroke">#FF2E364D</color>
+    <color name="input_stroke">#FF3B455E</color>
+    <color name="text_primary">#FFF8FAFC</color>
+    <color name="text_secondary">#FFCBD5E1</color>
+    <color name="text_muted">#FF94A3B8</color>
+    <color name="divider_color">#FF2B3347</color>
+    <color name="danger_red">#FFF87171</color>
+    <color name="success_green">#FF4ADE80</color>
+
+    <!-- Tinted Surface Banners & Region Pills (Dark Mode) -->
+    <color name="ice_blue_surface">#FF162B3E</color>
+    <color name="lavender_tip_bg">#FF262242</color>
+    <color name="lavender_tip_border">#FF4C3E82</color>
+    <color name="region_hcm_bg">#FF3F211B</color>
+    <color name="region_hcm_border">#FF9A3412</color>
+    <color name="region_bd_bg">#FF143525</color>
+    <color name="region_bd_border">#FF15803D</color>
+    <color name="region_vt_bg">#FF152D42</color>
+    <color name="region_vt_border">#FF0369A1</color>
+    <color name="region_vt_text">#FF7DD3FC</color>
+
+    <!-- AI Assistant & FAB Violet-to-Royal-Blue Gradient -->
+    <color name="ai_purple">#FF7C3AED</color>
+    <color name="ai_blue">#FF3B82F6</color>
+    <color name="ai_circle_indigo">#FF6366F1</color>
+
+    <!-- Home 3 Quick-Action Feature Gradients -->
+    <color name="quick_saved_start">#FFE11D48</color>
+    <color name="quick_saved_end">#FFDB2777</color>
+    <color name="quick_trip_start">#FF6D28D9</color>
+    <color name="quick_trip_end">#FF4F46E5</color>
+    <color name="quick_toolkit_start">#FF0284C7</color>
+    <color name="quick_toolkit_end">#FF0D9488</color>
+
+    <!-- Ride Booking Mint & Vibrant Green (Dark Mode) -->
+    <color name="ride_mint_bg">#FF132E24</color>
+    <color name="ride_mint_border">#FF1F5742</color>
+    <color name="ride_green">#FF10B981</color>
+    <color name="ride_btn_green">#FF16A34A</color>
+
+    <!-- Smart Trip Planner & Travel Toolkit Subscreen Gradients -->
+    <color name="trip_purple_start">#FF6D28D9</color>
+    <color name="trip_purple_end">#FF4338CA</color>
+    <color name="toolkit_cyan">#FF0284C7</color>
+    <color name="toolkit_teal">#FF0D9488</color>
+    <color name="weather_sky">#FF0284C7</color>
+    <color name="weather_indigo">#FF4F46E5</color>
+    <color name="weather_city_blue">#FF0288D1</color>
+    <color name="fx_teal">#FF0D9488</color>
+    <color name="fx_blue">#FF0284C7</color>
+    <color name="fx_chip_teal">#FF00A88F</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icon 2D Vung Tau: Ngon hai dang va song bien -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Tia sang hai dang -->
+    <path
+        android:fillColor="#F4B942"
+        android:pathData="M14.5,5.5L21,3.5V9.5L14.5,7.5ZM9.5,5.5L3,3.5V9.5L9.5,7.5Z" />
+    <!-- Noc den hai dang -->
+    <path
+        android:fillColor="#C6411C"
+        android:pathData="M10,4.5L12,2.5L14,4.5V8H10Z" />
+    <!-- Than thap hai dang soc trang do -->
+    <path
+        android:fillColor="#FFF8EE"
+        android:pathData="M9.5,8H14.5L15.4,17.5H8.6Z" />
+    <path
+        android:fillColor="#C6411C"
+        android:pathData="M9.1,11.5H14.9L15.1,14H8.9Z" />
+    <!-- Song bien -->
+    <path
+        android:fillColor="#1D5FA7"
+        android:pathData="M2,18C4.5,16.8 6.5,19.2 9,18C11.5,16.8 13.5,19.2 16,18C18.5,16.8 20.5,18.8 22,18V21.5H2Z" />
+</vector>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cream_background"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText">
+
+    <include layout="@layout/view_subscreen_header" />
+
+    <!-- Old-Style White 2-Tab Bar with Terracotta Active Indicator Underline -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_header_white_border"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/wrap_tab_fav_attractions"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tab_fav_attractions"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:text="📍 Places (0)"
+                android:textColor="@color/saigon_red"
+                android:textSize="13.5sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/ind_fav_attractions"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/saigon_red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/wrap_tab_fav_foods"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tab_fav_foods"
+                android:layout_width="wrap_content"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:text="🍜 Dishes (0)"
+                android:textColor="@color/text_secondary"
+                android:textSize="13.5sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/ind_fav_foods"
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Old-Style Lavender Trip Optimization Tip Banner -->
+    <TextView
+        android:id="@+id/card_fav_tip_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_lavender_tip_banner"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingStart="12dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="10dp"
+        android:text="💡 Tap 📅 to add places to My Trip — auto-optimize route →"
+        android:textColor="@color/ai_purple"
+        android:textSize="12.5sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:paddingBottom="76dp" />
+
+    <TextView
+        android:id="@+id/tv_empty_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="32dp"
+        android:text="Chưa có mục yêu thích nào được lưu."
+        android:textColor="@color/text_secondary"
+        android:textSize="14sp"
+        android:visibility="gone" />
+</LinearLayout>

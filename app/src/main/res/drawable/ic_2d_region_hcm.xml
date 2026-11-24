@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icon 2D TP. Ho Chi Minh: Duong chan troi do thi -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Toa thap Landmark -->
+    <path
+        android:fillColor="#1D5FA7"
+        android:pathData="M11.3,2L12.7,2V20.5H11.3Z" />
+    <path
+        android:fillColor="#2B7AC9"
+        android:pathData="M9.5,6.5H14.5V20.5H9.5Z" />
+    <!-- Toa nha ben trai -->
+    <path
+        android:fillColor="#E07A2F"
+        android:pathData="M3.5,11H8.5V20.5H3.5Z" />
+    <!-- Toa nha ben phai -->
+    <path
+        android:fillColor="#1E7A55"
+        android:pathData="M15.5,9.5H20.5V20.5H15.5Z" />
+    <!-- O cua so sang -->
+    <path
+        android:fillColor="#FFF8EE"
+        android:pathData="M5,13H7V14.5H5ZM17,11.5H19V13H17ZM17,14.5H19V16H17Z" />
+    <path
+        android:fillColor="#7A2E19"
+        android:pathData="M2,20.5H22V22H2Z" />
+</vector>

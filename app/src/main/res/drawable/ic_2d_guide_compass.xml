@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icon 2D Cam nang / Tro ly huong dan du lich: La ban 2D thay cho icon robot/AI -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Vong ngoai la ban -->
+    <path
+        android:fillColor="#1D5FA7"
+        android:pathData="M12,2A10,10 0 1,1 11.99,2Z" />
+    <!-- Mat trong kem am -->
+    <path
+        android:fillColor="#FFF8EE"
+        android:pathData="M12,4.4A7.6,7.6 0 1,1 11.99,4.4Z" />
+    <!-- Kim la ban huong Dong Bac (cam dat) -->
+    <path
+        android:fillColor="#C6411C"
+        android:pathData="M16.2,7.8L13.6,13.6L10.4,10.4Z" />
+    <!-- Kim la ban huong Tay Nam (xanh duong) -->
+    <path
+        android:fillColor="#1D5FA7"
+        android:pathData="M7.8,16.2L10.4,10.4L13.6,13.6Z" />
+    <!-- Tam la ban -->
+    <path
+        android:fillColor="#F4B942"
+        android:pathData="M12,10.8A1.2,1.2 0 1,1 11.99,10.8Z" />
+</vector>

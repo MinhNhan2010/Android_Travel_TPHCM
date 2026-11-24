@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Icon 2D Tab Giao tiep: Hai bong bong thoai song ngu -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Bong bong sau mau xanh -->
+    <path
+        android:fillColor="#1D5FA7"
+        android:pathData="M9,8H20C21.1,8 22,8.9 22,10V16.5C22,17.6 21.1,18.5 20,18.5H18V21.2L14.5,18.5H9C7.9,18.5 7,17.6 7,16.5V10C7,8.9 7.9,8 9,8Z" />
+    <!-- Bong bong truoc mau cam -->
+    <path
+        android:fillColor="#E07A2F"
+        android:pathData="M4,3H15C16.1,3 17,3.9 17,5V11.5C17,12.6 16.1,13.5 15,13.5H8.5L5,16.2V13.5H4C2.9,13.5 2,12.6 2,11.5V5C2,3.9 2.9,3 4,3Z" />
+    <!-- Ba cham hoi thoai -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M5.5,7.2A1.1,1.1 0 1,1 5.49,7.2ZM9.5,7.2A1.1,1.1 0 1,1 9.49,7.2ZM13.5,7.2A1.1,1.1 0 1,1 13.49,7.2Z" />
+</vector>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/compact_header_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_header_white_border"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="12dp"
+    android:paddingTop="9dp"
+    android:paddingEnd="12dp"
+    android:paddingBottom="9dp"
+    tools:ignore="HardcodedText">
+
+    <!-- Huy hiệu Logo App hiện đại (Chợ Bến Thành • Landmark 81 • Sông Sài Gòn) -->
+    <ImageView
+        android:id="@+id/iv_header_app_logo"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/ic_app_logo_badge" />
+
+    <!-- Khối nội dung 2 hàng cân đối: Tên App trọn vẹn không bị che + Nút thao tác gọn -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Hàng 1: Tên App / Tiêu đề màn hình + Nút Sáng/Tối & Ngôn ngữ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_header_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Khám phá Sài Gòn 🇻🇳"
+                android:textColor="@color/saigon_red"
+                android:textSize="17.5sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_header_theme"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bg_peach_pill"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="🌙"
+                android:textColor="@color/saigon_red_dark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_header_language"
+                android:layout_width="wrap_content"
+                android:layout_height="27dp"
+                android:background="@drawable/bg_peach_pill"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp"
+                android:text="🇻🇳 VI"
+                android:textColor="@color/saigon_red_dark"
+                android:textSize="10.5sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Hàng 2: Phụ đề + Huy hiệu Quản trị CMS & Tài khoản -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_header_subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="Cẩm nang du lịch TP. Hồ Chí Minh"
+                android:textColor="@color/text_secondary"
+                android:textSize="11sp" />
+
+            <!-- Giữ ID ẩn để tương thích an toàn -->
+            <TextView
+                android:id="@+id/btn_header_ai"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_header_admin"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bg_peach_pill"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp"
+                android:text="🛡️ CMS"
+                android:textColor="@color/saigon_red_dark"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/btn_header_account"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_peach_pill"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingStart="7dp"
+                android:paddingEnd="7dp">
+
+                <ImageView
+                    android:id="@+id/iv_header_role"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_2d_role_member" />
+
+                <TextView
+                    android:id="@+id/tv_header_role"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:maxWidth="80dp"
+                    android:text="Đăng nhập"
+                    android:textColor="@color/saigon_red_dark"
+                    android:textSize="10.5sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

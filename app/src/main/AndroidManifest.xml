@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- Tính năng "Gần tôi": sắp xếp địa điểm theo khoảng cách -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+
+    <!-- Android 11+ (API 30+) Package Visibility: cho phép nhận diện ứng dụng đặt xe đã cài & mở trực tiếp CH Play -->
+    <queries>
+        <!-- Cửa hàng Google Play (CH Play) chính thức -->
+        <package android:name="com.android.vending" />
+        <!-- Bản đồ Google Maps -->
+        <package android:name="com.google.android.apps.maps" />
+        <!-- 5 Ứng dụng Đặt xe & Taxi chính thức tại Việt Nam -->
+        <package android:name="com.gsm.customer" />
+        <package android:name="com.grabtaxi.passenger" />
+        <package android:name="xyz.be.customer" />
+        <package android:name="ml.online.passenger" />
+        <package android:name="vn.mailinh.taxi" />
+        <package android:name="com.vinasuntaxi.clientapp" />
+        <package android:name="com.vinasun.app" />
+
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.DIAL" />
+            <data android:scheme="tel" />
+        </intent>
+    </queries>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nhom_15_DuLichTpHCM">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Nhom_15_DuLichTpHCM"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

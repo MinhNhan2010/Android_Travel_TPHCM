@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_card"
+        android:elevation="8dp"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_crop_dialog_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="✂️ Căn chỉnh Ảnh đại diện"
+                android:textColor="@color/text_primary"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_crop_close"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/bg_lavender_pill"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="✕"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_crop_dialog_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Kéo để di chuyển khung hình • Kéo thanh trượt hoặc chụm 2 ngón để phóng to"
+            android:textColor="@color/text_secondary"
+            android:textSize="11.5sp" />
+
+        <!-- Interactive Crop Canvas -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="276dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_stat_tile"
+            android:padding="2dp">
+
+            <com.example.nhom_15_dulichtphcm.ui.components.AvatarCropperView
+                android:id="@+id/avatar_cropper_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <!-- Zoom Slider + Value -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_crop_zoom_out"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_oauth_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="➖"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp" />
+
+            <SeekBar
+                android:id="@+id/seek_crop_zoom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="350"
+                android:progress="0" />
+
+            <TextView
+                android:id="@+id/btn_crop_zoom_in"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_oauth_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="➕"
+                android:textColor="@color/text_primary"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/tv_crop_zoom_label"
+                android:layout_width="46dp"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="1.0x"
+                android:textColor="@color/saigon_teal"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Rotate 90° & Reset Controls -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_crop_rotate"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_oauth_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="🔄 Xoay 90°"
+                android:textColor="@color/text_primary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_crop_reset"
+                android:layout_width="0dp"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_oauth_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="🎯 Đặt lại"
+                android:textColor="@color/text_primary"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Cancel / Apply Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_crop_cancel"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_oauth_button"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="Hủy"
+                android:textColor="@color/text_primary"
+                android:textSize="13.5sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_crop_apply"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="1.35"
+                android:background="@drawable/bg_button_primary"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:text="✅ Lưu ảnh đã căn chỉnh"
+                android:textColor="@color/white"
+                android:textSize="13.5sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

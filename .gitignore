@@ -1,0 +1,26 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# AI Agent & Report Authoring Workspace
+.agents/
+.autohand/
+.commandcode/
+.kotlin/
+.vscode/
+skills-lock.json
+report_workspace/
+doc_images/
+*.docx

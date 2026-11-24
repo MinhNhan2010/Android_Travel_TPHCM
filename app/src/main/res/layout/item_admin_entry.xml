@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_admin_entry_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_card_rounded"
+    android:elevation="1.5dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    tools:ignore="HardcodedText">
+
+    <!-- Left Illustrated Visual Thumbnail (Photo OR Tinted Category/Audit Emblem) -->
+    <FrameLayout
+        android:layout_width="78dp"
+        android:layout_height="78dp">
+
+        <!-- Rounded Photo Frame (Attractions, Foods, Reviewed Places) -->
+        <FrameLayout
+            android:id="@+id/frame_admin_entry_photo"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:background="@drawable/bg_admin_thumb_frame"
+            android:clipToOutline="true">
+
+            <ImageView
+                android:id="@+id/iv_admin_entry_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@null"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/tv_admin_entry_photo_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_margin="5dp"
+                android:background="@drawable/bg_dark_overlay_pill"
+                android:paddingStart="6dp"
+                android:paddingTop="1.5dp"
+                android:paddingEnd="6dp"
+                android:paddingBottom="1.5dp"
+                android:text="🏛️"
+                android:textColor="@color/white"
+                android:textSize="9.5sp"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <!-- Tinted Illustrated Emblem Tile (Utilities & Audit Logs) -->
+        <LinearLayout
+            android:id="@+id/box_admin_entry_emblem"
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:background="@drawable/bg_stat_tile"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="6dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_admin_entry_emblem_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🚇"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/tv_admin_entry_emblem_caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="24/7"
+                android:textColor="@color/saigon_teal_dark"
+                android:textSize="9.5sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Right Content & Action Chips -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_admin_entry_badge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_peach_soft_pill"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingStart="8dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="2dp"
+                android:text="Di tích lịch sử"
+                android:textColor="@color/saigon_red_dark"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_admin_entry_meta"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="end"
+                android:maxLines="1"
+                android:text="Miễn phí"
+                android:textColor="@color/saigon_teal"
+                android:textSize="10.5sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_admin_entry_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_primary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_admin_entry_sub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_secondary"
+            android:textSize="11.5sp" />
+
+        <!-- Action Buttons Row -->
+        <LinearLayout
+            android:id="@+id/row_admin_entry_actions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btn_admin_entry_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_teal_mint_pill"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingStart="9dp"
+                android:paddingEnd="9dp"
+                android:text="👁️ Xem"
+                android:textColor="@color/saigon_teal_dark"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_admin_entry_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:layout_marginEnd="6dp"
+                android:background="@drawable/bg_lavender_pill"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="✏️ Sửa"
+                android:textColor="@color/saigon_indigo"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btn_admin_entry_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="28dp"
+                android:background="@drawable/bg_peach_soft_pill"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:text="🗑️ Xóa"
+                android:textColor="@color/danger_red"
+                android:textSize="11sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

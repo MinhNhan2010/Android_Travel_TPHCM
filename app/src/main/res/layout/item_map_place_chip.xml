@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_map_place_chip"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:layout_marginEnd="8dp"
+    android:background="@drawable/bg_chip_unselected"
+    android:clickable="true"
+    android:ellipsize="end"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:maxLines="1"
+    android:maxWidth="240dp"
+    android:paddingStart="11dp"
+    android:paddingEnd="11dp"
+    android:textColor="@color/text_primary"
+    android:textSize="11.5sp"
+    android:textStyle="bold" />

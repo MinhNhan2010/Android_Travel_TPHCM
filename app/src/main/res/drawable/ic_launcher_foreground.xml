@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- 1. Soft 3D Ambient Drop Shadow Under Map Pin (Safe Zone [24..85]) -->
+    <path
+        android:fillColor="#3808121A"
+        android:pathData="M54,26.8 C42.0,26.8 33.2,35.6 33.2,46.8 C33.2,59.5 46.8,74.8 52.3,82.8 C53.1,84.0 54.9,84.0 55.7,82.8 C61.2,74.8 74.8,59.5 74.8,46.8 C74.8,35.6 66.0,26.8 54,26.8 Z" />
+
+    <!-- 2. Sculpted 24K Champagne-Gold Outer Map Pin Frame -->
+    <path android:pathData="M54,24.5 C42.0,24.5 33.2,33.3 33.2,44.5 C33.2,57.2 46.8,72.5 52.3,80.5 C53.1,81.7 54.9,81.7 55.7,80.5 C61.2,72.5 74.8,57.2 74.8,44.5 C74.8,33.3 66.0,24.5 54,24.5 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="36"
+                android:startY="24"
+                android:endX="72"
+                android:endY="81"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFF3C4" />
+                <item android:offset="0.48" android:color="#FFFFCA28" />
+                <item android:offset="1.0" android:color="#FFFF8F00" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 3. Luminous Pearl-White Inner Pin Body -->
+    <path android:pathData="M54,26.5 C43.1,26.5 35.2,34.4 35.2,44.5 C35.2,56.1 47.6,70.2 52.7,77.8 C53.3,78.7 54.7,78.7 55.3,77.8 C60.4,70.2 72.8,56.1 72.8,44.5 C72.8,34.4 64.9,26.5 54,26.5 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="54"
+                android:startY="26"
+                android:endX="54"
+                android:endY="79"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFFFFF" />
+                <item android:offset="1.0" android:color="#FFFFF5EB" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 4. Warm Dawn Sky Disc Inside Pin -->
+    <path android:pathData="M54,44.8m-15.6,0a15.6,15.6 0 1,0 31.2,0a15.6,15.6 0 1,0 -31.2,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="54"
+                android:startY="29.2"
+                android:endX="54"
+                android:endY="60.4"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFF3E0" />
+                <item android:offset="1.0" android:color="#FFFFE0B2" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 5. Radiant Golden Saigon Sun -->
+    <path android:pathData="M47.2,38.4m-5.4,0a5.4,5.4 0 1,0 10.8,0a5.4,5.4 0 1,0 -10.8,0">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="47.2"
+                android:startY="33.0"
+                android:endX="47.2"
+                android:endY="43.8"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFFFD54F" />
+                <item android:offset="1.0" android:color="#FFFF7043" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- 6. Modern Saigon Skyline — Landmark 81 Stepped Tower & Bitexco Helipad (Right) -->
+    <path android:pathData="M59.4,29.8 L60.4,29.8 L60.7,34.2 L62.2,34.2 L62.2,38.8 L64.0,38.8 L64.0,42.8 L66.8,43.2 L66.1,44.4 L64.0,44.3 L64.0,56.2 L56.0,56.2 L56.0,40.2 L57.6,40.2 L57.6,35.2 L59.1,35.2 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="60"
+                android:startY="30"
+                android:endX="60"
+                android:endY="56.2"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FFE64A19" />
+                <item android:offset="1.0" android:color="#FF9A1B0E" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#66FFFFFF"
+        android:pathData="M58.5,36.8h0.9v17.2h-0.9zM60.9,35.8h0.9v18.2h-0.9z" />
+
+    <!-- 7. Authentic Two-Tier Ben Thanh Market Clock Cupola & 3-Portal Hall (Left-Center) -->
+    <!-- Upper Belfry Pyramid Roof -->
+    <path
+        android:fillColor="#FFD84315"
+        android:pathData="M43.2,43.2 L48.0,39.4 L52.8,43.2 Z" />
+    <!-- Upper Clock Cupola Tower -->
+    <path
+        android:fillColor="#FFC6370E"
+        android:pathData="M44.2,43.0h7.6v6.2h-7.6z" />
+    <!-- Wide Stepped Lower Market Hall Roof & Facade -->
+    <path
+        android:fillColor="#FFD84315"
+        android:pathData="M39.8,50.4 L42.2,48.6 L53.8,48.6 L56.2,50.4 Z" />
+    <path
+        android:fillColor="#FFAF2B09"
+        android:pathData="M40.8,50.2h14.4v6.0h-14.4z" />
+    <!-- Iconic White Clock Dial & Hands -->
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M48.0,46.0m-2.1,0a2.1,2.1 0 1,0 4.2,0a2.1,2.1 0 1,0 -4.2,0" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M48.0,46.0 L48.0,44.7 M48.0,46.0 L49.0,46.0"
+        android:strokeColor="#FFAF2B09"
+        android:strokeLineCap="round"
+        android:strokeWidth="0.65" />
+    <!-- Three Signature Ben Thanh Entry Arches -->
+    <path
+        android:fillColor="#FFFFF3E0"
+        android:pathData="M46.5,56.2 L46.5,52.8 A1.5,1.5 0 0,1 49.5,52.8 L49.5,56.2 Z" />
+    <path
+        android:fillColor="#CCFFF3E0"
+        android:pathData="M42.6,56.2 L42.6,53.5 A1.1,1.1 0 0,1 44.8,53.5 L44.8,56.2 Z" />
+    <path
+        android:fillColor="#CCFFF3E0"
+        android:pathData="M51.2,56.2 L51.2,53.5 A1.1,1.1 0 0,1 53.4,53.5 L53.4,56.2 Z" />
+
+    <!-- 8. Flowing Saigon River Emerald-Teal Ribbon Waves -->
+    <path android:pathData="M38.4,55.0 C43.5,52.5 48.8,57.2 54.5,54.8 C59.8,52.6 64.8,53.4 69.5,55.2 C67.6,59.8 63.6,64.8 59.6,69.0 C54.8,67.2 49.6,69.6 45.2,65.8 C42.0,62.3 39.6,58.6 38.4,55.0 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="38"
+                android:startY="54"
+                android:endX="70"
+                android:endY="69"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF00BFA5" />
+                <item android:offset="1.0" android:color="#FF00796B" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Second Deep Teal River Wave Tapering Into Pin Tip -->
+    <path android:pathData="M44.6,65.2 C49.5,67.8 55.2,64.8 61.0,67.6 C58.4,71.2 55.8,74.5 54.0,77.0 C52.2,74.5 48.3,69.8 44.6,65.2 Z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:startX="45"
+                android:startY="65"
+                android:endX="58"
+                android:endY="77"
+                android:type="linear">
+                <item android:offset="0.0" android:color="#FF00897B" />
+                <item android:offset="1.0" android:color="#FF004D40" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- Crisp Silky River Shimmer Ribbon -->
+    <path
+        android:fillColor="#D9FFFFFF"
+        android:pathData="M42.2,58.8 C46.4,56.9 50.2,57.5 54.2,59.0 C58.2,60.5 62.0,60.2 65.6,58.6 L66.1,59.8 C62.2,61.6 58.0,61.9 53.8,60.3 C50.0,58.9 46.5,58.3 42.7,60.0 Z" />
+
+    <!-- 9. Golden 4-Point Compass Discovery Star (Top-Right Accent) -->
+    <path
+        android:fillColor="#FFFFD54F"
+        android:pathData="M73.2,25.8 L74.5,29.6 L78.3,30.9 L74.5,32.2 L73.2,36.0 L71.9,32.2 L68.1,30.9 L71.9,29.6 Z" />
+</vector>
